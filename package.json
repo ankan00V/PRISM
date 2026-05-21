@@ -4,11 +4,15 @@
   "description": "Secure, context-aware RAG system with strict RBAC over SQLite, PDFs, and JSON logs",
   "main": "server.js",
   "scripts": {
+    "pdf": "node generate_pdf.js",
     "start": "node server.js",
     "seed": "node database.js && node pdf_generator.js",
-    "test": "node test_rag.js"
+    "test": "node test_rag.js",
+    "build": "node database.js && node pdf_generator.js",
+    "vercel-build": "node database.js && node pdf_generator.js"
   },
   "dependencies": {
+    "markdown-pdf": "^1.4.0",
     "@google/generative-ai": "^0.21.0",
     "axios": "^1.16.1",
     "cors": "^2.8.5",

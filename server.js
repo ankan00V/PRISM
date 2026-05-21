@@ -228,10 +228,15 @@ app.post('/api/settings/reseed', (req, res) => {
   });
 });
 
-// Start Server
-app.listen(PORT, () => {
-  console.log(`====================================================`);
-  console.log(`🚀 Enterprise RAG Server running on http://localhost:${PORT}`);
-  console.log(`🔒 Programmatic RBAC Guardrails Active`);
-  console.log(`====================================================`);
-});
+// Start Server (only if not in Vercel serverless environment)
+if (process.env.VERCEL !== '1') {
+  app.listen(PORT, () => {
+    console.log(`====================================================`);
+    console.log(`🚀 Enterprise RAG Server running on http://localhost:${PORT}`);
+    console.log(`🔒 Programmatic RBAC Guardrails Active`);
+    console.log(`====================================================`);
+  });
+}
+
+// Export for Vercel serverless
+module.exports = app;
