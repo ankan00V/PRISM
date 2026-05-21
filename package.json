@@ -1,0 +1,22 @@
+{
+  "name": "enterprise-rag-rbac",
+  "version": "1.0.0",
+  "description": "Secure, context-aware RAG system with strict RBAC over SQLite, PDFs, and JSON logs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node database.js && node pdf_generator.js",
+    "test": "node test_rag.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.16.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^8.5.2",
+    "pdf-parse": "^1.1.1",
+    "pdfkit": "^0.18.0",
+    "sqlite3": "^5.1.7"
+  }
+}
