@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRISM // Enterprise RAG Intelligence Dashboard</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#brandGrad)" />
+            <path d="M9 16L14 21L23 11" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="brandGrad" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8b5cf6" />
+                <stop offset="1" stop-color="#ec4899" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>PRISM</h1>
+          <span>RAG INTELLIGENCE</span>
+        </div>
+      </div>
+
+      <!-- User Profile Card / Selector -->
+      <div class="user-selector-container">
+        <label for="persona-select" class="section-title">ACTIVE PERSONA (RBAC)</label>
+        <div class="persona-card">
+          <div class="avatar" id="active-avatar">S</div>
+          <div class="persona-info">
+            <h3 id="active-name">Sarah Jenkins</h3>
+            <span id="active-role">CEO (Admin)</span>
+          </div>
+        </div>
+        <select id="persona-select" class="styled-select">
+          <!-- Populated by JavaScript -->
+        </select>
+      </div>
+
+      <!-- Sidebar Navigation -->
+      <nav class="nav-menu">
+        <button class="nav-item active" data-tab="console">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+          <span>Query Console</span>
+        </button>
+        <button class="nav-item" data-tab="pipeline">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          <span>Pipeline Visualizer</span>
+        </button>
+        <button class="nav-item" data-tab="browser">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 7v10c0 2 1.5 3 3.5 3h9c2 0 3.5-1 3.5-3V7c0-2-1.5-3-3.5-3h-9C5.5 4 4 5 4 7z"></path><path d="M9 20V4M15 20V4M4 12h16"></path></svg>
+          <span>Data Silo Explorer</span>
+        </button>
+        <button class="nav-item" data-tab="audit">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          <span>Security Audit Trail</span>
+          <span class="badge badge-warning hidden" id="violation-count">0</span>
+        </button>
+        <button class="nav-item" data-tab="settings">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          <span>System Settings</span>
+        </button>
+      </nav>
+
+      <!-- Footer Info -->
+      <div class="sidebar-footer">
+        <div class="connection-status">
+          <span class="status-dot online"></span>
+          <span>Nvidia LLM Fallback Active</span>
+        </div>
+        <p class="copyright">v1.0.0 &copy; 2026 PRISM</p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <div class="page-title-section">
+          <h2 id="page-display-title">Query Console</h2>
+          <p id="page-display-subtitle">Execute secure cross-silo semantic searches</p>
+        </div>
+        <div class="security-clearance-display">
+          <span class="clearance-label">ROLE CLEARANCE LEVEL:</span>
+          <span class="clearance-badge level-3" id="clearance-badge-val">LEVEL 3</span>
+        </div>
+      </header>
+
+      <!-- Content Views -->
+      <div class="view-viewport">
+        
+        <!-- VIEW 1: CONSOLE -->
+        <section class="tab-view active" id="view-console">
+          <!-- Metrics Dashboard Summary Row -->
+          <div class="metrics-row">
+            <div class="metric-card glass-card">
+              <span class="metric-label">Pipeline Latency</span>
+              <span class="metric-value" id="metric-latency">--</span>
+            </div>
+            <div class="metric-card glass-card">
+              <span class="metric-label">Cache Status</span>
+              <span class="metric-value" id="metric-cache">--</span>
+            </div>
+            <div class="metric-card glass-card">
+              <span class="metric-label">RLS Shielded Rows</span>
+              <span class="metric-value" id="metric-rls">0</span>
+            </div>
+            <div class="metric-card glass-card">
+              <span class="metric-label">Blocked Injections</span>
+              <span class="metric-value" id="metric-injections">0</span>
+            </div>
+          </div>
+
+          <div class="console-grid">
+            
+            <!-- Query Section -->
+            <div class="console-main-card glass-card">
+              <div class="card-header">
+                <h3>Ask Enterprise Assistant</h3>
+                <span class="card-subtitle">AI routes queries automatically and checks RBAC policies in real-time</span>
+              </div>
+              
+              <!-- Search Box -->
+              <div class="query-box-container">
+                <input type="text" id="query-input" placeholder="Type your query (e.g. 'What is the spec of Project Antigravity?' or 'List recent database query exceptions')..." />
+                <button id="submit-query-btn" class="glowing-btn">
+                  <span>Query System</span>
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </button>
+              </div>
+
+              <!-- Suggested Queries -->
+              <div class="suggestions-container">
+                <span class="label">Suggested Queries:</span>
+                <div class="suggestion-chips" id="suggestion-chips">
+                  <!-- Generated based on active persona -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Response Pane -->
+            <div class="console-main-card glass-card response-card hidden" id="response-panel">
+              <div class="card-header-flex">
+                <div class="header-text">
+                  <h3>Response Output</h3>
+                  <span class="card-subtitle">Grounded output from Google Gemma 3</span>
+                </div>
+                <div class="confidence-container">
+                  <span class="conf-lbl">LLM Confidence:</span>
+                  <div class="confidence-bar-bg">
+                    <div class="confidence-bar-fill" id="confidence-fill" style="width: 0%"></div>
+                  </div>
+                  <span class="conf-pct" id="confidence-pct">0%</span>
+                </div>
+              </div>
+
+              <div class="response-body">
+                <p id="response-answer-text">Generating answer...</p>
+              </div>
+
+              <div class="citations-section">
+                <h4>Sources Cited:</h4>
+                <div class="citations-container" id="citations-list">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Trace Visualization Pane -->
+            <div class="console-main-card glass-card trace-card hidden" id="trace-panel">
+              <div class="card-header">
+                <h3>RAG Retrieval Explainability Trace</h3>
+                <span class="card-subtitle">Step-by-step breakdown of query lifecycle, routing, and programmatic security auditing</span>
+              </div>
+
+              <div class="pipeline-flow">
+                <!-- Step 1 -->
+                <div class="pipeline-step" id="trace-step-0">
+                  <div class="step-icon">
+                    <span class="step-num">1</span>
+                  </div>
+                  <div class="step-content">
+                    <h4 class="step-title">Authentication & RBAC Mapping</h4>
+                    <p class="step-desc">Loading user role access policies...</p>
+                  </div>
+                  <div class="step-status status-pending">PENDING</div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="pipeline-step" id="trace-step-1">
+                  <div class="step-icon">
+                    <span class="step-num">2</span>
+                  </div>
+                  <div class="step-content">
+                    <h4 class="step-title">Intent Query Routing</h4>
+                    <p class="step-desc">Analyzing routing plans...</p>
+                  </div>
+                  <div class="step-status status-pending">PENDING</div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="pipeline-step" id="trace-step-2">
+                  <div class="step-icon">
+                    <span class="step-num">3</span>
+                  </div>
+                  <div class="step-content">
+                    <h4 class="step-title">Programmatic Access Audit (RBAC)</h4>
+                    <p class="step-desc">Scanning data compliance boundaries...</p>
+                  </div>
+                  <div class="step-status status-pending">PENDING</div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="pipeline-step" id="trace-step-3">
+                  <div class="step-icon">
+                    <span class="step-num">4</span>
+                  </div>
+                  <div class="step-content">
+                    <h4 class="step-title">Heterogeneous Context Retrieval</h4>
+                    <p class="step-desc">Running secure database queries & parsing PDFs...</p>
+                  </div>
+                  <div class="step-status status-pending">PENDING</div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="pipeline-step" id="trace-step-4">
+                  <div class="step-icon">
+                    <span class="step-num">5</span>
+                  </div>
+                  <div class="step-content">
+                    <h4 class="step-title">Grounded Answer Generation</h4>
+                    <p class="step-desc">Synthesizing answers with references...</p>
+                  </div>
+                  <div class="step-status status-pending">PENDING</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- VIEW 1.5: PIPELINE ROUTING DIAGRAM -->
+        <section class="tab-view" id="view-pipeline">
+          <div class="glass-card full-width-card">
+            <div class="card-header">
+              <h3>PRISM Pipeline Visualizer</h3>
+              <span class="card-subtitle">Real-time visualization of query execution path and security check gates</span>
+            </div>
+            <div class="diagram-container">
+              <div class="diagram-flow">
+                <div class="diagram-node" id="node-user">
+                  <div class="node-icon">👤</div>
+                  <div class="node-label">User Query Input</div>
+                  <div class="node-meta" id="node-meta-user">--</div>
+                </div>
+                
+                <div class="diagram-arrow">➔</div>
+                
+                <div class="diagram-node" id="node-router">
+                  <div class="node-icon">🧭</div>
+                  <div class="node-label">Intent Router</div>
+                  <div class="node-meta" id="node-meta-router">Pending</div>
+                </div>
+                
+                <div class="diagram-arrow">➔</div>
+                
+                <div class="diagram-node" id="node-rbac">
+                  <div class="node-icon">🛡️</div>
+                  <div class="node-label">RBAC Security Gate</div>
+                  <div class="node-meta" id="node-meta-rbac">Pending</div>
+                </div>
+                
+                <div class="diagram-arrow">➔</div>
+                
+                <div class="diagram-node" id="node-retrieval">
+                  <div class="node-icon">📚</div>
+                  <div class="node-label">Silo Retrieval & RLS</div>
+                  <div class="node-meta" id="node-meta-retrieval">Pending</div>
+                </div>
+                
+                <div class="diagram-arrow">➔</div>
+                
+                <div class="diagram-node" id="node-generation">
+                  <div class="node-icon">🤖</div>
+                  <div class="node-label">Gemma Generation</div>
+                  <div class="node-meta" id="node-meta-generation">Pending</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW 2: DATA SILO EXPLORER -->
+        <section class="tab-view" id="view-browser">
+          <div class="browser-grid">
+            <!-- Left panel: List of Sources -->
+            <div class="glass-card list-panel">
+              <div class="card-header">
+                <h3>Enterprise Silos</h3>
+                <span class="card-subtitle">Select a source to browse raw values</span>
+              </div>
+              
+              <div class="silo-selector-list">
+                <div class="silo-group">
+                  <h4>Structured Databases (SQL)</h4>
+                  <div class="silo-item-btn active" data-source-type="sql" data-source-id="compliance_records">
+                    <span class="silo-icon">📊</span>
+                    <div class="silo-info">
+                      <span class="silo-name">compliance_records</span>
+                      <span class="silo-policy">All Roles | Level 0</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="sql" data-source-id="employees">
+                    <span class="silo-icon">👥</span>
+                    <div class="silo-info">
+                      <span class="silo-name">employees</span>
+                      <span class="silo-policy">HR, Finance, Exec | L1</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="sql" data-source-id="salaries">
+                    <span class="silo-icon">💵</span>
+                    <div class="silo-info">
+                      <span class="silo-name">salaries</span>
+                      <span class="silo-policy">HR, Exec | Level 2</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="sql" data-source-id="contracts">
+                    <span class="silo-icon">📁</span>
+                    <div class="silo-info">
+                      <span class="silo-name">contracts</span>
+                      <span class="silo-policy">Finance, Exec | Level 2</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="sql" data-source-id="financials">
+                    <span class="silo-icon">📈</span>
+                    <div class="silo-info">
+                      <span class="silo-name">financials</span>
+                      <span class="silo-policy">Finance, Exec | Level 2</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="silo-group">
+                  <h4>Documents Folder (PDF)</h4>
+                  <div class="silo-item-btn" data-source-type="pdf" data-source-id="Employee_Handbook_2026.pdf">
+                    <span class="silo-icon">📄</span>
+                    <div class="silo-info">
+                      <span class="silo-name">Employee_Handbook_2026.pdf</span>
+                      <span class="silo-policy">All Roles | Level 0</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="pdf" data-source-id="it_security_policy.pdf">
+                    <span class="silo-icon">🔑</span>
+                    <div class="silo-info">
+                      <span class="silo-name">it_security_policy.pdf</span>
+                      <span class="silo-policy">IT, Analyst, Exec | L1</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="pdf" data-source-id="Project_Antigravity_Specs.pdf">
+                    <span class="silo-icon">⚙️</span>
+                    <div class="silo-info">
+                      <span class="silo-name">Project_Antigravity_Specs.pdf</span>
+                      <span class="silo-policy">IT Ops, Exec | Level 1</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="pdf" data-source-id="hr_handbook_v3.pdf">
+                    <span class="silo-icon">💼</span>
+                    <div class="silo-info">
+                      <span class="silo-name">hr_handbook_v3.pdf</span>
+                      <span class="silo-policy">HR, Compliance, Exec | L2</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="pdf" data-source-id="Q3_Financial_Projections.pdf">
+                    <span class="silo-icon">💰</span>
+                    <div class="silo-info">
+                      <span class="silo-name">Q3_Financial_Projections.pdf</span>
+                      <span class="silo-policy">Finance, Analyst, Exec | L2</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="pdf" data-source-id="board_deck_Q3_2024.pdf">
+                    <span class="silo-icon">🏛️</span>
+                    <div class="silo-info">
+                      <span class="silo-name">board_deck_Q3_2024.pdf</span>
+                      <span class="silo-policy">Compliance, Exec | L3</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="pdf" data-source-id="compliance_report_2024.pdf">
+                    <span class="silo-icon">🛡️</span>
+                    <div class="silo-info">
+                      <span class="silo-name">compliance_report_2024.pdf</span>
+                      <span class="silo-policy">Compliance, Exec | Level 3</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="silo-group">
+                  <h4>Spreadsheets (CSV)</h4>
+                  <div class="silo-item-btn" data-source-type="csv" data-source-id="sales_kpi_2026.csv">
+                    <span class="silo-icon">📊</span>
+                    <div class="silo-info">
+                      <span class="silo-name">sales_kpi_2026.csv</span>
+                      <span class="silo-policy">Finance, Analyst, Exec | L1</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="csv" data-source-id="compliance_records.csv">
+                    <span class="silo-icon">📝</span>
+                    <div class="silo-info">
+                      <span class="silo-name">compliance_records.csv</span>
+                      <span class="silo-policy">Compliance, Exec | Level 3</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="silo-group">
+                  <h4>Log Audits (JSON)</h4>
+                  <div class="silo-item-btn" data-source-type="json" data-source-id="system_logs.json">
+                    <span class="silo-icon">🪵</span>
+                    <div class="silo-info">
+                      <span class="silo-name">system_logs.json</span>
+                      <span class="silo-policy">All Roles | Level 0</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="json" data-source-id="audit_trail.json">
+                    <span class="silo-icon">🔍</span>
+                    <div class="silo-info">
+                      <span class="silo-name">audit_trail.json</span>
+                      <span class="silo-policy">All Roles | Level 0</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="json" data-source-id="infrastructure_logs.json">
+                    <span class="silo-icon">⚡</span>
+                    <div class="silo-info">
+                      <span class="silo-name">infrastructure_logs.json</span>
+                      <span class="silo-policy">IT Ops, Exec | Level 1</span>
+                    </div>
+                  </div>
+                  <div class="silo-item-btn" data-source-type="json" data-source-id="system_audit.json">
+                    <span class="silo-icon">🔒</span>
+                    <div class="silo-info">
+                      <span class="silo-name">system_audit.json</span>
+                      <span class="silo-policy">Exec Only | Level 3</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right panel: Interactive View Content -->
+            <div class="glass-card content-panel">
+              <div class="card-header-flex">
+                <div class="header-text">
+                  <h3 id="browser-title">compliance_records</h3>
+                  <span class="card-subtitle" id="browser-subtitle">SQL database table preview</span>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                  <div class="rbac-status-badge passed hidden" id="browser-rls-status" style="margin-right: 4px;">
+                    <span class="status-icon">🔽</span>
+                    <span class="status-txt">RLS ACTIVE</span>
+                  </div>
+                  <div class="rbac-status-badge" id="browser-rbac-status">
+                    <span class="status-icon">🛡️</span>
+                    <span class="status-txt">RBAC PASSED</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="browser-content-viewport" id="browser-data-container">
+                <!-- Rendered database table, text document, or JSON log elements -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW 3: AUDIT TRAIL -->
+        <section class="tab-view" id="view-audit">
+          <div class="glass-card full-width-card">
+            <div class="card-header-flex">
+              <div class="header-text">
+                <h3>Compliance & RBAC Access Log</h3>
+                <span class="card-subtitle">Real-time system requests, routing logs, and security policy checks</span>
+              </div>
+              <button id="refresh-audit-btn" class="simple-btn">Refresh Audit</button>
+            </div>
+            
+            <div class="audit-filters-row">
+              <input type="text" id="audit-search-user" placeholder="Filter by username..." />
+              <select id="audit-filter-status">
+                <option value="ALL">All Statuses</option>
+                <option value="GRANTED">GRANTED</option>
+                <option value="DENIED">DENIED</option>
+                <option value="SECURITY_VIOLATION">SECURITY_VIOLATION</option>
+              </select>
+            </div>
+
+            <div class="table-container">
+              <table class="audit-table">
+                <thead>
+                  <tr>
+                    <th>Timestamp</th>
+                    <th>User</th>
+                    <th>Role (Clearance)</th>
+                    <th>Query Submitted</th>
+                    <th>Routed Silos</th>
+                    <th>Citations Used</th>
+                    <th>Access Result</th>
+                  </tr>
+                </thead>
+                <tbody id="audit-log-rows">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- VIEW 4: SETTINGS -->
+        <section class="tab-view" id="view-settings">
+          <div class="settings-grid">
+            <div class="glass-card settings-card">
+              <div class="card-header">
+                <h3>Model & API Settings</h3>
+                <span class="card-subtitle">Configure keys and local/live model settings</span>
+              </div>
+              
+              <div class="settings-form">
+                <div class="form-group">
+                  <label for="settings-key-input">Nvidia NIM API Key</label>
+                  <div class="input-with-button">
+                    <input type="password" id="settings-key-input" placeholder="nvapi-..." />
+                    <button class="styled-btn" id="save-key-btn">Save Key</button>
+                  </div>
+                  <p class="field-help">Your key is stored securely in the local workspace configuration (.env file).</p>
+                </div>
+
+                <div class="form-group">
+                  <label>LLM Engine Status</label>
+                  <div class="info-block" id="api-status-info">
+                    <div class="info-badge success">KEY DETECTED</div>
+                    <p>Model configured: <strong>google/gemma-3n-e2b-it</strong> (Nvidia NIM API endpoint)</p>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Database Seeding Utility</label>
+                  <p class="field-help">Reset SQLite database tables and generate fresh PDFs and synthetic JSON logs.</p>
+                  <button class="styled-btn btn-danger" id="reset-db-btn">Reset Database & Re-Seed</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification hidden" id="toast">
+    <div class="toast-icon" id="toast-icon">⚠️</div>
+    <div class="toast-content">
+      <h4 id="toast-title">Security Alert</h4>
+      <p id="toast-message">Clearance level check failed.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
