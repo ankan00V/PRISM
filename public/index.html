@@ -78,7 +78,7 @@
       <div class="sidebar-footer">
         <div class="connection-status">
           <span class="status-dot online"></span>
-          <span>Nvidia LLM Fallback Active</span>
+          <span>PRISM Engine Active</span>
         </div>
         <p class="copyright">v1.0.0 &copy; 2026 PRISM</p>
       </div>
@@ -134,7 +134,7 @@
               
               <!-- Search Box -->
               <div class="query-box-container">
-                <input type="text" id="query-input" placeholder="Type your query (e.g. 'What is the spec of Project Antigravity?' or 'List recent database query exceptions')..." />
+                <input type="text" id="query-input" placeholder="Type your query (e.g. 'What is the spec of Project Phoenix?' or 'List recent database query exceptions')..." />
                 <button id="submit-query-btn" class="glowing-btn">
                   <span>Query System</span>
                   <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
@@ -155,14 +155,14 @@
               <div class="card-header-flex">
                 <div class="header-text">
                   <h3>Response Output</h3>
-                  <span class="card-subtitle">Grounded output from Google Gemma 3</span>
+                  <span class="card-subtitle">Grounded response from enterprise LLM with source citations</span>
                 </div>
                 <div class="confidence-container">
-                  <span class="conf-lbl">LLM Confidence:</span>
+                  <span class="conf-lbl">Confidence:</span>
                   <div class="confidence-bar-bg">
                     <div class="confidence-bar-fill" id="confidence-fill" style="width: 0%"></div>
                   </div>
-                  <span class="conf-pct" id="confidence-pct">0%</span>
+                  <span class="conf-pct" id="confidence-pct">--</span>
                 </div>
               </div>
 
@@ -170,7 +170,7 @@
                 <p id="response-answer-text">Generating answer...</p>
               </div>
 
-              <div class="citations-section">
+              <div class="citations-section hidden" id="citations-section">
                 <h4>Sources Cited:</h4>
                 <div class="citations-container" id="citations-list">
                   <!-- Populated by JS -->
@@ -368,10 +368,10 @@
                       <span class="silo-policy">IT, Analyst, Exec | L1</span>
                     </div>
                   </div>
-                  <div class="silo-item-btn" data-source-type="pdf" data-source-id="Project_Antigravity_Specs.pdf">
+                  <div class="silo-item-btn" data-source-type="pdf" data-source-id="Project_Phoenix_Specs.pdf">
                     <span class="silo-icon">⚙️</span>
                     <div class="silo-info">
-                      <span class="silo-name">Project_Antigravity_Specs.pdf</span>
+                      <span class="silo-name">Project_Phoenix_Specs.pdf</span>
                       <span class="silo-policy">IT Ops, Exec | Level 1</span>
                     </div>
                   </div>

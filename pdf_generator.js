@@ -65,15 +65,15 @@ Our primary communication platforms are Slack for real-time messaging, Google Me
 
 generatePDF('Employee_Handbook_2026.pdf', 'PRISM Employee Handbook 2026', 'PUBLIC (Level 0)', handbookContent);
 
-// 2. Project Antigravity Specs (Engineer/Admin - Clearance 1)
+// 2. Project Phoenix Specs (Engineer/Admin - Clearance 1)
 const specContent = `CLASSIFIED: INTERNAL ENGINEERING SPECIFICATIONS ONLY. DO NOT DISTRIBUTE.
 
-Project Codename: Project Antigravity
+Project Codename: Project Phoenix
 Lead Architect: Alex Rivera (Senior Software Engineer)
 Security Clearance: Level 1 (Engineering & Administration)
 
 System Architecture Overview:
-Project Antigravity is a distributed AI orchestrator designed to run multi-agent workflows. It coordinates tasks among specialized LLM subagents, handles token usage optimization, and dynamically routes prompt requests.
+Project Phoenix is a distributed AI orchestrator designed to run multi-agent workflows. It coordinates tasks among specialized LLM subagents, handles token usage optimization, and dynamically routes prompt requests.
 
 Database Schema & Caching Layer:
 The persistence layer utilizes PostgreSQL for agent state tracking and Redis for prompt caching. Core database models include AgentNode, WorkspaceBranch, and ExecutionLog. To maintain millisecond-level response latency, the API cache utilizes Redis clusters with automated cache eviction on workspace modification.
@@ -86,7 +86,7 @@ API Endpoints (Internal Only):
 Security and Access Control:
 Access to code repositories and deployment clusters is managed via IAM policies and SSH keys. Deployments are executed via GitHub Actions within isolated VPCs. All active servers must rotate secrets every 90 days.`;
 
-generatePDF('Project_Antigravity_Specs.pdf', 'Project Antigravity Specifications', 'RESTRICTED (Level 1 - Engineers/Admins)', specContent);
+generatePDF('Project_Phoenix_Specs.pdf', 'Project Phoenix Specifications', 'RESTRICTED (Level 1 - Engineers/Admins)', specContent);
 
 // 3. Q3 Financial Projections (Finance/Admin - Clearance 2)
 const financialContent = `STRICTLY CONFIDENTIAL: FINANCE & BOARD OF DIRECTORS ONLY.
@@ -102,7 +102,7 @@ Merger and Acquisition (M&A) Evaluation:
 PRISM is currently in late-stage acquisition discussions with Starlight Retail. The proposed deal size is estimated at $12.5M in a cash-and-stock transaction. Finance has completed the preliminary due diligence. If approved, the merger will expand our operational footprint by 35% and onboard over 120 corporate clients.
 
 Budget Allocations and Cost Savings:
-To support the acquisition, we are restructuring departmental budgets. The marketing budget will be scaled back by 12%, while R&D will receive a 20% budget increase to accelerate Project Antigravity.
+To support the acquisition, we are restructuring departmental budgets. The marketing budget will be scaled back by 12%, while R&D will receive a 20% budget increase to accelerate Project Phoenix.
 
 Stock Options and Equity Refactoring:
 Board members have proposed a stock option pool expansion of 800,000 shares to incentivize core engineering team members, specifically targeting key engineering leads in the AI workflows division. Details on employee-specific equity options can be accessed via the HR compensation portal.`;

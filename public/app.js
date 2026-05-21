@@ -9,35 +9,34 @@ let blockedInjectionsCount = 0;
 // Suggested queries maps per role
 const suggestionMap = {
   'executive': [
-    "What is Sarah Jenkins' salary and bonus?",
-    "Show Project Antigravity specifications.",
-    "Are there any CPU spikes or database connections exhausted logs?",
-    "Show recent security violations in the system audit logs."
+    "Q3 regional sales performance",
+    "Show my accessible compliance reports",
+    "Recent CRITICAL system errors",
+    "Compare East vs West revenue"
   ],
   'hr': [
-    "What is John Doe's base salary and department?",
-    "Show general workplace safety policy.",
-    "What is Sarah Jenkins' salary and bonus?"
+    "Employee salary breakdown",
+    "Show onboarding policy details",
+    "Workplace safety compliance"
   ],
   'finance': [
-    "Show high-value active contracts.",
-    "What are the Q3 financial projections and M&A details?",
-    "What is the value of the Nexus Corp contract?",
-    "Show financial reimbursement guidelines."
+    "Show high-value contracts",
+    "Q3 financial projections",
+    "Revenue vs EBITDA trend"
   ],
   'it_ops': [
-    "Show Project Antigravity specifications.",
-    "Are there any CPU spikes or database connections exhausted logs?",
-    "Show IT Asset Access Policy."
+    "Show Project Phoenix specs",
+    "Recent CPU spike alerts",
+    "IT security policy summary"
   ],
   'analyst': [
-    "Show Employee Handbook guidelines for remote work.",
-    "Show general workplace safety policy.",
-    "What are the Q3 financial projections?"
+    "Show my accessible compliance reports",
+    "Q3 sales KPI by region",
+    "Compare quarterly performance"
   ],
   'intern': [
-    "Show Employee Handbook remote work stipend.",
-    "What is Sarah Jenkins' salary?"
+    "Show remote work policy",
+    "Employee handbook guidelines"
   ]
 };
 
@@ -89,7 +88,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupEventListeners();
   loadDataSources();
   updateSuggestedQueries();
+  // Auto-run a demo query to populate metrics so the UI never shows empty '--' values
+  setTimeout(() => autoRunDemoQuery(), 2000);
 });
+
+// Auto-run demo query on page load to populate metrics
+async function autoRunDemoQuery() {
+  queryInput.value = "Q3 regional sales performance";
+  await submitQuery();
+}
 
 // Setup Event Listeners
 function setupEventListeners() {
@@ -449,18 +456,26 @@ async function submitQuery() {
     confidencePct.innerText = `${confVal}%`;
     confidenceFill.style.width = `${confVal}%`;
     
-    // Set confidence fill color based on rating
+    // Set confidence fill color and response card border based on rating
     if (confVal >= 80) {
       confidenceFill.style.backgroundColor = 'var(--success)';
+      responsePanel.style.borderLeftColor = 'var(--success)';
+      responsePanel.style.borderLeftWidth = '4px';
     } else if (confVal >= 50) {
       confidenceFill.style.backgroundColor = 'var(--warning)';
+      responsePanel.style.borderLeftColor = 'var(--warning)';
+      responsePanel.style.borderLeftWidth = '4px';
     } else {
       confidenceFill.style.backgroundColor = 'var(--danger)';
+      responsePanel.style.borderLeftColor = 'var(--danger)';
+      responsePanel.style.borderLeftWidth = '4px';
     }
 
-    // Render Citations
+    // Render Citations — show section only if citations exist
+    const citationsSection = document.getElementById('citations-section');
     citationsList.innerHTML = '';
     if (citations.length > 0) {
+      citationsSection.classList.remove('hidden');
       citations.forEach(cit => {
         const item = document.createElement('div');
         item.className = 'citation-badge';
@@ -475,7 +490,7 @@ async function submitQuery() {
         citationsList.appendChild(item);
       });
     } else {
-      citationsList.innerHTML = '<span class="text-muted" style="font-size: 12px;">No source documents referenced directly.</span>';
+      citationsSection.classList.add('hidden');
     }
 
     // Update Metrics Summary Cards

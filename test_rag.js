@@ -47,10 +47,10 @@ async function runTests() {
   assert(checkRBAC({ role: 'hr', clearance_level: 2 }, 'SQL', 'contracts').allowed === false, 'HR Manager is BLOCKED from reading contracts table');
   
   // PDF Document clearance check
-  assert(checkRBAC(executive, 'PDF', 'Project_Antigravity_Specs.pdf').allowed === true, 'Executive can read Project Antigravity engineering specs');
-  assert(checkRBAC(it_ops, 'PDF', 'Project_Antigravity_Specs.pdf').allowed === true, 'IT Ops can read Project Antigravity engineering specs');
-  assert(checkRBAC({ role: 'intern', clearance_level: 0 }, 'PDF', 'Project_Antigravity_Specs.pdf').allowed === false, 'Intern is BLOCKED from Project Antigravity specs');
-  assert(checkRBAC({ role: 'finance', clearance_level: 2 }, 'PDF', 'Project_Antigravity_Specs.pdf').allowed === false, 'Finance user is BLOCKED from Project Antigravity specs');
+  assert(checkRBAC(executive, 'PDF', 'Project_Phoenix_Specs.pdf').allowed === true, 'Executive can read Project Phoenix engineering specs');
+  assert(checkRBAC(it_ops, 'PDF', 'Project_Phoenix_Specs.pdf').allowed === true, 'IT Ops can read Project Phoenix engineering specs');
+  assert(checkRBAC({ role: 'intern', clearance_level: 0 }, 'PDF', 'Project_Phoenix_Specs.pdf').allowed === false, 'Intern is BLOCKED from Project Phoenix specs');
+  assert(checkRBAC({ role: 'finance', clearance_level: 2 }, 'PDF', 'Project_Phoenix_Specs.pdf').allowed === false, 'Finance user is BLOCKED from Project Phoenix specs');
 
   // JSON log files clearance check
   assert(checkRBAC(executive, 'JSON', 'system_audit.json').allowed === true, 'Executive can read security system audit logs');

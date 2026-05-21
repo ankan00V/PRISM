@@ -6,7 +6,8 @@ const axios = require('axios');
 require('dotenv').config();
 
 const dbPath = path.join(__dirname, 'prism.db');
-const NVIDIA_API_KEY = process.env.NVIDIA_API_KEY;
+// Read API key dynamically so runtime updates via /api/settings/apikey take effect
+function getNvidiaApiKey() { return process.env.NVIDIA_API_KEY || ''; }
 const API_URL = 'https://integrate.api.nvidia.com/v1/chat/completions';
 const MODEL_NAME = 'google/gemma-3n-e2b-it';
 
@@ -60,7 +61,7 @@ const DOCUMENT_REGISTRY = {
     min_clearance: 0,
     classification: 'PUBLIC'
   },
-  'Project_Antigravity_Specs.pdf': {
+  'Project_Phoenix_Specs.pdf': {
     allowed_roles: ['executive', 'it_ops'],
     min_clearance: 1,
     classification: 'RESTRICTED'
@@ -176,12 +177,13 @@ async function readPdfText(filename) {
 
 // Helper: Call Nvidia LLM API
 async function callLLM(systemPrompt, userPrompt) {
-  if (!NVIDIA_API_KEY) {
-    throw new Error('NVIDIA_API_KEY not configured.');
+  const apiKey = getNvidiaApiKey();
+  if (!apiKey) {
+    throw new Error('NVIDIA_API_KEY not configured. Using offline fallback.');
   }
 
   const headers = {
-    'Authorization': `Bearer ${NVIDIA_API_KEY}`,
+    'Authorization': `Bearer ${apiKey}`,
     'Content-Type': 'application/json',
     'Accept': 'application/json'
   };
@@ -217,7 +219,7 @@ function fallbackRoute(query) {
   if (q.includes('salary') || q.includes('salaries') || q.includes('pay') || q.includes('earn') || q.includes('ceo') || q.includes('employee') || q.includes('contract') || q.includes('client') || q.includes('deal') || q.includes('revenue') || q.includes('financial') || q.includes('compliance') || q.includes('workplace') || q.includes('safety') || q.includes('reimbursement') || q.includes('ebitda') || q.includes('net_income') || q.includes('headcount')) {
     sources.push('SQL');
   }
-  if (q.includes('handbook') || q.includes('policy') || q.includes('vacation') || q.includes('remote') || q.includes('specs') || q.includes('technical') || q.includes('architecture') || q.includes('merger') || q.includes('acquisition') || q.includes('q3') || q.includes('antigravity') || q.includes('board') || q.includes('summary') || q.includes('onboarding') || q.includes('report') || q.includes('soc2') || q.includes('gdpr') || q.includes('password') || q.includes('vpn') || q.includes('incident')) {
+  if (q.includes('handbook') || q.includes('policy') || q.includes('vacation') || q.includes('remote') || q.includes('specs') || q.includes('technical') || q.includes('architecture') || q.includes('merger') || q.includes('acquisition') || q.includes('q3') || q.includes('phoenix') || q.includes('board') || q.includes('summary') || q.includes('onboarding') || q.includes('report') || q.includes('soc2') || q.includes('gdpr') || q.includes('password') || q.includes('vpn') || q.includes('incident')) {
     sources.push('PDF');
   }
   if (q.includes('log') || q.includes('alert') || q.includes('ip') || q.includes('cpu') || q.includes('spike') || q.includes('connections') || q.includes('audit')) {
@@ -551,7 +553,7 @@ async function retrievePDFContext(query, keywords, user, trace) {
     'it_security_policy.pdf',
     // legacy files
     'Employee_Handbook_2026.pdf',
-    'Project_Antigravity_Specs.pdf',
+    'Project_Phoenix_Specs.pdf',
     'Q3_Financial_Projections.pdf'
   ];
 

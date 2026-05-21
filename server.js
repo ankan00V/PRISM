@@ -9,10 +9,10 @@ const rateLimit = require('express-rate-limit');
 // Load environment variables
 dotenv.config();
 
-// Boot validation
+// Boot validation — warn but don't crash so offline fallback mode works
 if (!process.env.NVIDIA_API_KEY) {
-  console.error("CRITICAL ERROR: NVIDIA_API_KEY is missing from environment variables. Exiting.");
-  process.exit(1);
+  console.warn("⚠️  WARNING: NVIDIA_API_KEY is missing. LLM features will use offline fallback mode.");
+  console.warn("   Configure your key via Settings or set NVIDIA_API_KEY in .env");
 }
 
 const { executeRAGPipeline, getUserProfile, checkRBAC, rowIsPermitted, parseCSV } = require('./rag_engine');
@@ -103,7 +103,7 @@ app.get('/api/data-sources', (req, res) => {
     ],
     documents: [
       { name: 'Employee_Handbook_2026.pdf', description: 'PRISM general employee manual', allowed_roles: 'executive, hr, finance, it_ops, analyst, intern', min_clearance: 0 },
-      { name: 'Project_Antigravity_Specs.pdf', description: 'Technical specs & API configurations', allowed_roles: 'executive, it_ops', min_clearance: 1 },
+      { name: 'Project_Phoenix_Specs.pdf', description: 'Technical specs & API configurations', allowed_roles: 'executive, it_ops', min_clearance: 1 },
       { name: 'Q3_Financial_Projections.pdf', description: 'Confidential corporate strategy and M&A details', allowed_roles: 'executive, finance, analyst', min_clearance: 2 }
     ],
     logs: [
