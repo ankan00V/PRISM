@@ -1,0 +1,58 @@
+{
+  "executive": {
+    "clearance_level": 3,
+    "sources": [
+      "ALL"
+    ],
+    "description": "Full access to all data sources"
+  },
+  "finance": {
+    "clearance_level": 2,
+    "sources": [
+      "financial_summary.csv",
+      "sales_kpi.csv",
+      "compliance_records.csv(financial)"
+    ],
+    "description": "Financial and sales data"
+  },
+  "hr": {
+    "clearance_level": 2,
+    "sources": [
+      "employee_records.csv",
+      "compliance_records.csv(hr)"
+    ],
+    "description": "People data and HR compliance"
+  },
+  "it_ops": {
+    "clearance_level": 1,
+    "sources": [
+      "system_logs.json",
+      "audit_trail.json"
+    ],
+    "description": "Infrastructure and audit logs"
+  },
+  "analyst": {
+    "clearance_level": 1,
+    "sources": [
+      "sales_kpi.csv",
+      "system_logs.json(aggregated)"
+    ],
+    "description": "Anonymized sales and ops data"
+  },
+  "compliance": {
+    "clearance_level": 3,
+    "sources": [
+      "compliance_records.csv",
+      "audit_trail.json",
+      "ALL_readonly"
+    ],
+    "description": "Full read access for audit purposes"
+  },
+  "intern": {
+    "clearance_level": 0,
+    "sources": [
+      "sales_kpi.csv(public_summary)"
+    ],
+    "description": "Only aggregate public summaries"
+  }
+}

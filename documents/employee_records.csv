@@ -1,0 +1,200 @@
+emp_id,first_name,last_name,department,role,salary,hire_date,location,employment_type,performance_rating,clearance_level
+1001,Aisha,Singh,Engineering,SWE II,304184,2021-03-01,Dubai,Full-Time,Needs Improvement,1
+1002,Sunita,Taylor,Engineering,SWE II,218429,2019-06-23,Berlin,Contract,Needs Improvement,1
+1003,Emma,Johnson,Engineering,Staff Engineer,118441,2017-10-12,Berlin,Full-Time,Needs Improvement,1
+1004,Emma,Sharma,Engineering,Principal Engineer,175646,2021-08-07,San Francisco,Full-Time,Exceeds Expectations,1
+1005,James,Gupta,Engineering,SWE I,71469,2018-09-15,Singapore,Full-Time,Meets Expectations,1
+1006,Diana,Hassan,Engineering,SWE II,124369,2023-02-10,Sydney,Full-Time,Meets Expectations,1
+1007,Sofia,Ibrahim,Engineering,Staff Engineer,154829,2016-01-22,Dubai,Full-Time,Meets Expectations,1
+1008,Priya,Ibrahim,Engineering,Staff Engineer,299855,2023-03-06,San Francisco,Full-Time,Meets Expectations,1
+1009,Carlos,García,Engineering,Senior SWE,112288,2017-10-15,Sydney,Full-Time,Meets Expectations,1
+1010,Emma,Robinson,Engineering,SWE II,201037,2020-03-09,San Francisco,Contract,Needs Improvement,1
+1011,Nadia,Kapoor,Engineering,SWE I,81522,2022-04-25,New York,Full-Time,Exceeds Expectations,1
+1012,Claire,García,Engineering,SWE II,268078,2020-06-12,Dubai,Full-Time,Exceeds Expectations,1
+1013,Noah,Johansson,Engineering,Staff Engineer,56130,2019-05-19,Sydney,Full-Time,Meets Expectations,1
+1014,Carlos,Okafor,Engineering,Principal Engineer,310155,2016-09-26,Singapore,Full-Time,Needs Improvement,1
+1015,Rahul,Patel,Engineering,Principal Engineer,86959,2023-05-22,New York,Part-Time,Meets Expectations,1
+1016,Dev,Johnson,Engineering,Principal Engineer,137540,2015-08-21,London,Full-Time,Needs Improvement,1
+1017,Hassan,Lopez,Finance,Senior Analyst,266694,2016-05-06,Singapore,Part-Time,Needs Improvement,2
+1018,Sunita,Lopez,Finance,Analyst,97982,2019-09-14,Berlin,Full-Time,Exceeds Expectations,2
+1019,Tyler,Chen,Finance,Manager,180140,2017-12-23,Mumbai,Contract,Meets Expectations,2
+1020,Leila,Lopez,Finance,Analyst,59883,2020-02-21,San Francisco,Full-Time,Needs Improvement,2
+1021,Diana,Davis,Finance,Senior Analyst,194041,2016-06-26,San Francisco,Full-Time,Meets Expectations,2
+1022,Ravi,Wilson,Finance,Manager,137704,2019-11-30,Mumbai,Part-Time,Needs Improvement,2
+1023,Sofia,Hassan,Finance,Analyst,211960,2022-06-10,London,Full-Time,Exceptional,2
+1024,Yuki,Andersen,Finance,Analyst,136499,2018-01-20,Singapore,Full-Time,Exceeds Expectations,2
+1025,Noah,Hassan,Finance,Manager,319979,2020-06-24,New York,Full-Time,Meets Expectations,2
+1026,Rahul,Nguyen,Finance,Manager,78114,2015-01-15,London,Full-Time,Exceeds Expectations,2
+1027,Aarav,Müller,Finance,Director,279231,2021-04-16,San Francisco,Full-Time,Needs Improvement,2
+1028,Nadia,Chen,Finance,Analyst,248575,2021-07-13,Dubai,Full-Time,Exceptional,2
+1029,Hassan,Davis,Finance,Manager,246182,2015-06-13,Singapore,Full-Time,Exceptional,2
+1030,Fatima,Chen,Finance,Manager,268058,2021-12-17,Singapore,Full-Time,Exceeds Expectations,2
+1031,Diana,Martinez,HR,HR Coordinator,149036,2023-04-05,Dubai,Full-Time,Meets Expectations,2
+1032,Chloe,Patel,HR,HR Generalist,111673,2019-04-16,Sydney,Full-Time,Exceeds Expectations,2
+1033,Ravi,Fischer,HR,HRBP,238321,2018-06-04,Singapore,Full-Time,Exceptional,2
+1034,Noah,Robinson,HR,HR Generalist,263910,2018-09-06,San Francisco,Full-Time,Meets Expectations,2
+1035,Ravi,Wilson,HR,Chief People Officer,264546,2022-08-15,Berlin,Full-Time,Exceptional,2
+1036,Noah,Patel,HR,HR Manager,148620,2021-07-06,San Francisco,Part-Time,Meets Expectations,2
+1037,Leila,Gupta,HR,HR Manager,219457,2019-11-23,San Francisco,Contract,Needs Improvement,2
+1038,Jake,Ali,HR,HR Generalist,188547,2015-07-01,New York,Part-Time,Needs Improvement,2
+1039,James,Ibrahim,HR,HR Generalist,245956,2019-11-02,Berlin,Part-Time,Meets Expectations,2
+1040,Yuki,Ibrahim,HR,HR Coordinator,212455,2020-09-08,Dubai,Full-Time,Meets Expectations,2
+1041,Zara,Ibrahim,HR,HR Manager,121735,2017-02-24,Dubai,Full-Time,Needs Improvement,2
+1042,Nadia,Kapoor,HR,Chief People Officer,212784,2019-07-22,New York,Full-Time,Meets Expectations,2
+1043,Leila,Taylor,HR,HR Generalist,280385,2021-07-03,Berlin,Contract,Meets Expectations,2
+1044,Claire,Fischer,HR,HRBP,167041,2020-09-24,London,Full-Time,Meets Expectations,2
+1045,Ravi,Nguyen,HR,Chief People Officer,230735,2016-01-18,Singapore,Full-Time,Exceeds Expectations,2
+1046,Priya,Kim,HR,HR Generalist,132255,2015-04-11,Sydney,Part-Time,Exceptional,2
+1047,Marcus,García,HR,HRBP,272286,2022-01-23,Dubai,Contract,Meets Expectations,2
+1048,Jake,Sharma,HR,HR Generalist,132369,2022-05-11,San Francisco,Contract,Exceeds Expectations,2
+1049,Nadia,Kim,HR,HR Generalist,298557,2015-07-25,San Francisco,Contract,Exceeds Expectations,2
+1050,Hassan,Nakamura,HR,HRBP,221355,2023-06-21,Dubai,Part-Time,Meets Expectations,2
+1051,Noah,Nguyen,HR,HR Generalist,303866,2020-01-18,Singapore,Full-Time,Needs Improvement,2
+1052,Omar,Johnson,HR,HRBP,180433,2018-01-29,Mumbai,Full-Time,Meets Expectations,2
+1053,James,Chen,HR,HR Manager,222619,2021-01-21,London,Full-Time,Meets Expectations,2
+1054,Zara,Ali,HR,HR Generalist,167172,2015-09-21,Berlin,Part-Time,Meets Expectations,2
+1055,Ravi,Ali,HR,HRBP,87645,2017-04-27,Dubai,Part-Time,Exceptional,2
+1056,Maya,Okafor,Operations,VP Operations,305074,2015-01-25,Dubai,Contract,Needs Improvement,1
+1057,Emma,Singh,Operations,COO,170625,2020-06-22,Dubai,Contract,Exceptional,1
+1058,Sunita,Fischer,Operations,VP Operations,231228,2022-07-02,Dubai,Full-Time,Meets Expectations,1
+1059,Marcus,Lopez,Operations,Ops Manager,69138,2019-06-02,New York,Full-Time,Meets Expectations,1
+1060,Priya,Singh,Operations,Ops Manager,297062,2017-01-14,Dubai,Full-Time,Exceeds Expectations,1
+1061,Lucas,Hassan,Operations,VP Operations,226361,2018-10-14,Dubai,Full-Time,Meets Expectations,1
+1062,Aarav,Fernandez,Operations,Sr Ops Manager,97942,2020-04-10,New York,Full-Time,Exceeds Expectations,1
+1063,Aarav,Kim,Operations,Ops Analyst,76106,2023-06-17,Singapore,Full-Time,Needs Improvement,1
+1064,Claire,Ibrahim,Operations,Ops Manager,180066,2016-06-01,San Francisco,Part-Time,Exceeds Expectations,1
+1065,Maya,Williams,Operations,VP Operations,189345,2023-08-08,San Francisco,Full-Time,Meets Expectations,1
+1066,Marcus,Ibrahim,Operations,Ops Analyst,68462,2018-07-01,Dubai,Contract,Exceeds Expectations,1
+1067,Jake,Nguyen,Operations,Ops Analyst,182323,2016-02-22,Mumbai,Part-Time,Exceptional,1
+1068,Nadia,Ali,Operations,COO,76532,2018-11-23,Berlin,Full-Time,Needs Improvement,1
+1069,Ravi,Brown,Operations,Sr Ops Manager,61633,2019-09-17,San Francisco,Contract,Meets Expectations,1
+1070,Aisha,Fernandez,Operations,VP Operations,135211,2019-11-19,Mumbai,Part-Time,Needs Improvement,1
+1071,Ravi,Fernandez,Operations,VP Operations,298727,2019-11-20,Mumbai,Full-Time,Exceeds Expectations,1
+1072,Emma,Nguyen,Operations,Ops Analyst,201238,2020-01-21,Sydney,Part-Time,Needs Improvement,1
+1073,Claire,Robinson,Operations,VP Operations,231368,2015-04-28,Berlin,Full-Time,Meets Expectations,1
+1074,Rahul,Singh,Operations,Ops Manager,241030,2017-11-24,Mumbai,Part-Time,Exceptional,1
+1075,Emma,Fernandez,Operations,COO,155168,2015-12-17,Dubai,Contract,Needs Improvement,1
+1076,Jake,Brown,Operations,Ops Manager,304609,2022-03-30,Sydney,Full-Time,Exceptional,1
+1077,Jake,Kim,Operations,Sr Ops Manager,171180,2019-07-15,Mumbai,Part-Time,Meets Expectations,1
+1078,Fatima,Wilson,Operations,VP Operations,235227,2019-10-09,Berlin,Full-Time,Meets Expectations,1
+1079,Emma,Müller,Operations,Sr Ops Manager,215758,2017-10-26,Singapore,Full-Time,Exceptional,1
+1080,Carlos,Fernandez,Operations,COO,152071,2017-02-23,Sydney,Full-Time,Needs Improvement,1
+1081,Ravi,García,Operations,COO,203372,2016-02-16,Mumbai,Full-Time,Meets Expectations,1
+1082,Jake,Wilson,Operations,Ops Manager,213475,2015-02-27,London,Full-Time,Exceptional,1
+1083,Liam,Taylor,Operations,Ops Analyst,208163,2022-10-27,Sydney,Full-Time,Exceptional,1
+1084,Claire,Nakamura,Operations,COO,204075,2020-04-06,Berlin,Full-Time,Exceptional,1
+1085,Ravi,Johnson,Operations,Sr Ops Manager,305467,2016-04-12,Dubai,Contract,Exceptional,1
+1086,Ingrid,Lopez,Sales,SDR,134548,2016-09-03,Mumbai,Full-Time,Exceeds Expectations,1
+1087,Leila,Fischer,Sales,SDR,273195,2021-10-19,Singapore,Part-Time,Meets Expectations,1
+1088,Chloe,Lopez,Sales,Regional Manager,287113,2018-05-02,Dubai,Full-Time,Needs Improvement,1
+1089,Fatima,Müller,Sales,VP Sales,86578,2021-11-02,Singapore,Full-Time,Meets Expectations,1
+1090,Aisha,Wilson,Sales,SDR,137343,2017-09-09,San Francisco,Full-Time,Exceptional,1
+1091,Leila,Brown,Sales,Regional Manager,291193,2022-09-24,Mumbai,Full-Time,Exceeds Expectations,1
+1092,Chloe,Nakamura,Sales,Senior AE,203225,2022-11-19,San Francisco,Full-Time,Meets Expectations,1
+1093,Sofia,Wilson,Sales,VP Sales,158714,2019-10-08,Singapore,Full-Time,Meets Expectations,1
+1094,Aisha,Fischer,Sales,AE,92439,2015-09-02,Mumbai,Part-Time,Needs Improvement,1
+1095,Omar,Scott,Sales,Senior AE,285242,2016-05-24,Mumbai,Contract,Meets Expectations,1
+1096,James,Andersen,Sales,VP Sales,313890,2019-11-29,New York,Contract,Meets Expectations,1
+1097,James,Kim,Sales,VP Sales,186264,2015-04-16,New York,Full-Time,Needs Improvement,1
+1098,Dev,Taylor,Sales,SDR,146850,2020-04-11,Sydney,Full-Time,Exceeds Expectations,1
+1099,Ravi,Brown,Sales,VP Sales,283529,2022-02-13,San Francisco,Contract,Meets Expectations,1
+1100,Sunita,Müller,Sales,Regional Manager,229749,2018-08-08,London,Full-Time,Meets Expectations,1
+1101,Tyler,Kapoor,Sales,Regional Manager,206109,2022-06-06,New York,Contract,Exceptional,1
+1102,Sofia,Nguyen,Sales,Senior AE,187329,2018-08-17,Dubai,Part-Time,Exceptional,1
+1103,Priya,García,Sales,VP Sales,297208,2019-08-20,Berlin,Part-Time,Meets Expectations,1
+1104,Noah,Wilson,Sales,Regional Manager,82059,2017-04-13,London,Full-Time,Meets Expectations,1
+1105,Ethan,Andersen,Sales,Regional Manager,118662,2015-04-29,Singapore,Full-Time,Meets Expectations,1
+1106,Zara,Johnson,Sales,VP Sales,62169,2021-03-12,Singapore,Full-Time,Meets Expectations,1
+1107,Diana,Scott,Sales,SDR,135725,2020-08-03,Mumbai,Part-Time,Meets Expectations,1
+1108,Emma,Nakamura,Sales,Regional Manager,307968,2020-04-18,London,Contract,Exceeds Expectations,1
+1109,Noah,Nguyen,Sales,VP Sales,126569,2015-10-13,Dubai,Full-Time,Needs Improvement,1
+1110,Fatima,Okafor,Sales,Senior AE,56344,2018-03-04,Sydney,Full-Time,Meets Expectations,1
+1111,Rahul,Wilson,Sales,VP Sales,308934,2018-11-14,Dubai,Contract,Meets Expectations,1
+1112,Tyler,Kim,Sales,AE,180202,2021-05-31,Dubai,Full-Time,Meets Expectations,1
+1113,Sunita,Fischer,Sales,Regional Manager,254874,2019-05-01,London,Contract,Exceptional,1
+1114,Rahul,Robinson,Sales,AE,318345,2021-08-14,San Francisco,Contract,Exceptional,1
+1115,Fatima,Chen,Sales,VP Sales,294561,2015-03-04,Dubai,Full-Time,Exceptional,1
+1116,Jake,Thompson,Legal,Counsel,232503,2021-12-27,San Francisco,Full-Time,Needs Improvement,3
+1117,Jake,Hassan,Legal,Senior Counsel,221021,2022-01-11,Sydney,Part-Time,Exceptional,3
+1118,Ethan,Ibrahim,Legal,General Counsel,90872,2017-08-19,Mumbai,Full-Time,Exceptional,3
+1119,Ethan,Scott,Legal,Senior Counsel,106612,2023-07-12,San Francisco,Contract,Exceeds Expectations,3
+1120,Rahul,Fischer,Legal,Counsel,70176,2015-07-08,New York,Full-Time,Meets Expectations,3
+1121,Emma,Gupta,Legal,Counsel,280803,2016-08-19,Dubai,Part-Time,Exceeds Expectations,3
+1122,Leila,Robinson,Legal,Associate Counsel,146786,2015-11-20,Dubai,Part-Time,Exceeds Expectations,3
+1123,Omar,Taylor,Legal,Senior Counsel,130034,2017-08-09,Mumbai,Contract,Meets Expectations,3
+1124,Sunita,Wilson,Legal,Paralegal,298926,2018-03-24,London,Full-Time,Meets Expectations,3
+1125,Zara,Scott,Legal,Counsel,211842,2022-03-02,Mumbai,Contract,Meets Expectations,3
+1126,Sofia,Kim,Legal,Associate Counsel,256690,2020-06-02,Dubai,Part-Time,Meets Expectations,3
+1127,Yuki,Sharma,Legal,General Counsel,210122,2022-11-04,Dubai,Full-Time,Exceptional,3
+1128,Fatima,Brown,Legal,General Counsel,80713,2021-10-19,Mumbai,Full-Time,Needs Improvement,3
+1129,Carlos,Andersen,Legal,Counsel,169821,2022-02-20,Mumbai,Full-Time,Exceptional,3
+1130,Priya,Lopez,Legal,Paralegal,216969,2019-12-11,Berlin,Full-Time,Exceptional,3
+1131,Zara,Williams,Legal,Counsel,226294,2023-05-20,Singapore,Full-Time,Needs Improvement,3
+1132,Ravi,Williams,Legal,Counsel,318084,2018-01-21,Mumbai,Contract,Meets Expectations,3
+1133,James,Chen,Legal,Counsel,115382,2020-04-02,Singapore,Contract,Needs Improvement,3
+1134,Aarav,Singh,Legal,Counsel,102344,2019-06-05,San Francisco,Contract,Meets Expectations,3
+1135,Maya,Müller,Legal,Counsel,254767,2022-02-28,Singapore,Contract,Exceptional,3
+1136,Emma,Taylor,Legal,General Counsel,226969,2021-11-03,San Francisco,Contract,Meets Expectations,3
+1137,Priya,Patel,Legal,Senior Counsel,116171,2016-07-26,Mumbai,Contract,Exceptional,3
+1138,Liam,Thompson,Legal,Paralegal,178102,2021-01-10,Sydney,Full-Time,Needs Improvement,3
+1139,Ethan,Müller,Legal,Senior Counsel,136014,2019-08-27,Sydney,Part-Time,Meets Expectations,3
+1140,Maya,García,Legal,Counsel,72152,2022-09-28,Sydney,Contract,Exceeds Expectations,3
+1141,Maya,Wilson,Legal,Counsel,107090,2022-09-09,Berlin,Full-Time,Meets Expectations,3
+1142,Chloe,Kapoor,Legal,Counsel,154514,2016-05-15,Sydney,Full-Time,Exceeds Expectations,3
+1143,Liam,Fischer,IT,Helpdesk,229854,2017-09-24,Singapore,Full-Time,Needs Improvement,1
+1144,Rahul,Nguyen,IT,SysAdmin,168220,2017-08-12,London,Part-Time,Exceptional,1
+1145,Nadia,Singh,IT,Network Eng,130858,2016-06-16,London,Full-Time,Exceptional,1
+1146,Ingrid,Fischer,IT,SysAdmin,62791,2019-01-07,Singapore,Part-Time,Meets Expectations,1
+1147,Priya,Chen,IT,Helpdesk,146355,2017-12-22,Dubai,Part-Time,Exceptional,1
+1148,Lucas,Davis,IT,Helpdesk,304690,2020-01-11,San Francisco,Contract,Needs Improvement,1
+1149,Ingrid,Johansson,IT,SysAdmin,77735,2023-02-26,Mumbai,Contract,Exceptional,1
+1150,Zara,Ibrahim,IT,Helpdesk,306124,2019-07-04,San Francisco,Contract,Meets Expectations,1
+1151,Leila,Chen,IT,Helpdesk,97357,2018-08-12,San Francisco,Full-Time,Meets Expectations,1
+1152,Leila,Gupta,IT,CTO,225490,2019-04-10,Mumbai,Contract,Needs Improvement,1
+1153,Ingrid,Scott,IT,CTO,280548,2016-02-11,San Francisco,Part-Time,Exceeds Expectations,1
+1154,Zara,Martinez,IT,IT Manager,291744,2017-07-24,Sydney,Contract,Meets Expectations,1
+1155,Sunita,Singh,Marketing,Manager,278747,2018-07-04,Berlin,Full-Time,Meets Expectations,1
+1156,James,Ali,Marketing,Coordinator,102828,2015-12-16,San Francisco,Full-Time,Exceeds Expectations,1
+1157,Nadia,Wilson,Marketing,CMO,86447,2021-07-30,Berlin,Full-Time,Meets Expectations,1
+1158,Priya,Okafor,Marketing,Manager,276740,2023-02-01,Mumbai,Full-Time,Exceptional,1
+1159,Sunita,Brown,Marketing,CMO,166536,2016-09-25,Singapore,Full-Time,Meets Expectations,1
+1160,Lucas,Singh,Marketing,CMO,247707,2016-04-15,Singapore,Contract,Needs Improvement,1
+1161,Diana,Ibrahim,Marketing,CMO,68764,2021-10-30,Mumbai,Full-Time,Exceeds Expectations,1
+1162,Maya,Sharma,Marketing,Manager,216996,2018-10-23,London,Full-Time,Needs Improvement,1
+1163,Fatima,Taylor,Marketing,Director,91482,2016-08-04,New York,Full-Time,Needs Improvement,1
+1164,Omar,Martinez,Marketing,Specialist,252234,2019-09-16,London,Full-Time,Meets Expectations,1
+1165,Liam,Williams,Marketing,Manager,99541,2015-08-04,New York,Full-Time,Meets Expectations,1
+1166,Leila,Nakamura,Marketing,Director,277305,2020-06-12,Dubai,Full-Time,Exceeds Expectations,1
+1167,Zara,Müller,Marketing,CMO,114673,2018-11-14,Mumbai,Part-Time,Meets Expectations,1
+1168,Emma,Thompson,Marketing,CMO,216700,2015-07-06,New York,Full-Time,Exceeds Expectations,1
+1169,Liam,Nguyen,Marketing,Manager,165747,2023-08-10,Mumbai,Full-Time,Meets Expectations,1
+1170,Zara,Williams,Compliance,Compliance Analyst,315773,2023-05-18,London,Contract,Needs Improvement,3
+1171,Ravi,Ibrahim,Compliance,Compliance Officer,317281,2021-04-07,Berlin,Full-Time,Meets Expectations,3
+1172,Omar,Johansson,Compliance,Compliance Analyst,283704,2015-03-18,San Francisco,Full-Time,Needs Improvement,3
+1173,Ethan,Ali,Compliance,Compliance Manager,267034,2022-12-16,Mumbai,Full-Time,Meets Expectations,3
+1174,Ingrid,Andersen,Compliance,Compliance Analyst,225272,2016-12-04,Sydney,Full-Time,Exceptional,3
+1175,Zara,Lopez,Compliance,Compliance Manager,110502,2017-09-23,Dubai,Part-Time,Exceptional,3
+1176,Rahul,Kim,Compliance,Compliance Manager,217673,2023-05-13,Berlin,Full-Time,Exceptional,3
+1177,Dev,García,Compliance,CCO,114782,2020-12-13,Berlin,Full-Time,Exceeds Expectations,3
+1178,Noah,García,Compliance,Compliance Officer,108899,2016-08-22,London,Part-Time,Exceeds Expectations,3
+1179,Ethan,Brown,Compliance,Compliance Analyst,147875,2023-09-01,Sydney,Part-Time,Needs Improvement,3
+1180,Rahul,Chen,Compliance,Compliance Manager,224454,2022-01-13,Sydney,Full-Time,Meets Expectations,3
+1181,Marcus,Patel,Compliance,Compliance Manager,213765,2018-01-30,Berlin,Part-Time,Exceptional,3
+1182,Priya,Patel,Compliance,Sr Compliance Officer,297086,2020-01-26,Berlin,Full-Time,Exceptional,3
+1183,Marcus,Wilson,Compliance,Compliance Analyst,256579,2020-03-10,New York,Contract,Needs Improvement,3
+1184,Claire,Gupta,Compliance,Compliance Officer,223572,2021-10-14,London,Full-Time,Meets Expectations,3
+1185,Ethan,Williams,Executive,EVP,99212,2020-08-28,New York,Full-Time,Meets Expectations,3
+1186,Maya,Johansson,Executive,President,138228,2019-01-30,Mumbai,Contract,Meets Expectations,3
+1187,Ethan,Martinez,Executive,EVP,82454,2022-01-28,San Francisco,Full-Time,Exceptional,3
+1188,Noah,Fernandez,Executive,CEO,257670,2018-03-09,London,Full-Time,Exceptional,3
+1189,Yuki,Taylor,Executive,CEO,129149,2018-12-03,Dubai,Full-Time,Needs Improvement,3
+1190,Tyler,Taylor,Executive,Chief of Staff,217310,2021-04-08,Berlin,Full-Time,Needs Improvement,3
+1191,Maya,Sharma,Executive,Chief of Staff,276986,2020-09-13,Berlin,Full-Time,Exceeds Expectations,3
+1192,Claire,García,Executive,SVP,234166,2023-08-05,Singapore,Full-Time,Exceeds Expectations,3
+1193,Dev,Nguyen,Executive,Chief of Staff,210080,2016-02-19,New York,Full-Time,Needs Improvement,3
+1194,Aisha,Williams,Executive,SVP,252509,2016-09-23,London,Contract,Exceptional,3
+1195,Fatima,Kim,Executive,President,245997,2022-08-02,Sydney,Part-Time,Meets Expectations,3
+1196,Emma,Okafor,Executive,President,177684,2020-12-27,Sydney,Full-Time,Meets Expectations,3
+1197,Lucas,Okafor,Executive,CEO,285999,2020-03-06,Dubai,Part-Time,Needs Improvement,3
+1198,Ingrid,Andersen,Executive,President,139965,2017-03-28,London,Full-Time,Exceptional,3
+1199,Diana,Müller,Executive,President,249622,2021-03-21,San Francisco,Full-Time,Exceptional,3

@@ -1,0 +1,181 @@
+asset_id,category,item_name,quantity,unit_cost_usd,total_value_usd,location,status,last_audit_date,assigned_dept,clearance_level
+AST-5000,Laptops,Laptops Model B-257,291,14139.66,4114641.13,London Office,DECOMMISSIONED,2024-11-18,Executive,1
+AST-5001,Data Center Assets,Data Center Assets Model X-309,294,15607.0,4588458.42,Singapore DC,IN_USE,2024-09-30,IT,1
+AST-5002,Network Equipment,Network Equipment Model Pro-562,244,1968.86,480402.04,London Office,IN_USE,2024-03-28,Finance,1
+AST-5003,Security Hardware,Security Hardware Model Lite-717,91,591.58,53834.13,Singapore DC,IN_USE,2024-04-05,Operations,1
+AST-5004,Monitors,Monitors Model C-310,467,17334.46,8095191.46,SF Office,AVAILABLE,2024-12-03,Compliance,1
+AST-5005,Monitors,Monitors Model Pro-111,233,1048.3,244252.84,SF Office,AVAILABLE,2024-07-29,IT,1
+AST-5006,Servers,Servers Model X-589,57,2337.54,133239.84,NYC HQ,MAINTENANCE,2024-04-15,HR,1
+AST-5007,Network Equipment,Network Equipment Model Lite-780,159,7788.13,1238312.54,Singapore DC,IN_USE,2024-11-05,Executive,1
+AST-5008,Peripherals,Peripherals Model Lite-801,301,3665.47,1103305.43,Singapore DC,AVAILABLE,2024-04-13,Engineering,1
+AST-5009,Servers,Servers Model X-719,229,1165.5,266899.78,SF Office,DECOMMISSIONED,2024-06-17,Executive,1
+AST-5010,Mobile Devices,Mobile Devices Model A-854,236,8336.58,1967432.35,NYC HQ,AVAILABLE,2024-11-26,Marketing,1
+AST-5011,Software Licenses,Software Licenses Model C-500,359,15169.87,5445983.67,Mumbai Office,IN_USE,2024-07-31,Operations,1
+AST-5012,Servers,Servers Model X-568,461,11124.99,5128620.97,Singapore DC,IN_USE,2024-12-23,Executive,1
+AST-5013,Monitors,Monitors Model A-345,202,12580.13,2541185.44,SF Office,AVAILABLE,2024-11-17,Compliance,1
+AST-5014,Peripherals,Peripherals Model Lite-843,342,16494.59,5641149.63,SF Office,MAINTENANCE,2024-07-29,Compliance,1
+AST-5015,Monitors,Monitors Model A-616,189,1391.46,262985.46,London Office,MAINTENANCE,2024-08-18,HR,1
+AST-5016,Peripherals,Peripherals Model X-127,107,9116.57,975473.13,NYC HQ,MAINTENANCE,2024-07-14,Legal,1
+AST-5017,Office Supplies,Office Supplies Model A-110,439,3511.35,1541481.98,London Office,IN_USE,2024-12-29,HR,1
+AST-5018,Software Licenses,Software Licenses Model X-572,344,13479.94,4637098.8,NYC HQ,IN_USE,2024-10-07,Operations,1
+AST-5019,Mobile Devices,Mobile Devices Model C-961,72,8482.12,610712.45,SF Office,IN_USE,2024-01-10,Executive,1
+AST-5020,Monitors,Monitors Model Pro-859,91,5305.19,482772.44,Singapore DC,IN_USE,2024-02-09,Engineering,1
+AST-5021,Peripherals,Peripherals Model B-321,79,7940.23,627278.48,NYC HQ,DECOMMISSIONED,2024-04-20,Marketing,1
+AST-5022,Laptops,Laptops Model Pro-756,429,11431.71,4904201.68,NYC HQ,MAINTENANCE,2024-12-19,Sales,1
+AST-5023,Mobile Devices,Mobile Devices Model A-890,27,10773.72,290890.53,Singapore DC,IN_USE,2024-05-07,Legal,1
+AST-5024,Network Equipment,Network Equipment Model X-128,103,1658.58,170834.25,NYC HQ,AVAILABLE,2024-04-08,Finance,1
+AST-5025,Network Equipment,Network Equipment Model Lite-271,491,15882.91,7798511.14,SF Office,IN_USE,2024-07-31,Compliance,1
+AST-5026,Monitors,Monitors Model Pro-741,418,5898.64,2465631.21,SF Office,DECOMMISSIONED,2024-04-16,Compliance,1
+AST-5027,Office Supplies,Office Supplies Model B-318,481,7710.43,3708715.44,NYC HQ,AVAILABLE,2024-06-14,HR,1
+AST-5028,Laptops,Laptops Model A-498,206,11777.06,2426074.31,SF Office,MAINTENANCE,2024-04-22,Finance,1
+AST-5029,Peripherals,Peripherals Model A-168,333,11236.01,3741591.48,SF Office,MAINTENANCE,2024-06-03,Executive,1
+AST-5030,Mobile Devices,Mobile Devices Model Pro-275,53,12829.87,679983.22,London Office,IN_USE,2024-11-03,Legal,1
+AST-5031,Office Supplies,Office Supplies Model Lite-236,348,16643.09,5791796.34,London Office,IN_USE,2024-11-21,Legal,1
+AST-5032,Mobile Devices,Mobile Devices Model Pro-699,35,6041.87,211465.36,Singapore DC,MAINTENANCE,2024-09-18,Operations,1
+AST-5033,Security Hardware,Security Hardware Model A-338,301,12687.75,3819014.23,NYC HQ,DECOMMISSIONED,2024-03-04,Sales,1
+AST-5034,Network Equipment,Network Equipment Model B-734,378,7721.53,2918739.93,NYC HQ,IN_USE,2024-03-11,Legal,1
+AST-5035,Mobile Devices,Mobile Devices Model X-309,152,3648.18,554523.66,NYC HQ,IN_USE,2024-11-02,Marketing,1
+AST-5036,Software Licenses,Software Licenses Model Lite-905,69,5017.1,346180.18,NYC HQ,DECOMMISSIONED,2024-07-31,Sales,1
+AST-5037,Laptops,Laptops Model C-450,118,15247.12,1799160.54,SF Office,IN_USE,2024-10-03,Engineering,1
+AST-5038,Network Equipment,Network Equipment Model Lite-327,411,12376.99,5086941.6,Mumbai Office,MAINTENANCE,2024-09-23,Legal,1
+AST-5039,Servers,Servers Model A-990,227,11341.64,2574551.94,Singapore DC,IN_USE,2024-04-08,Engineering,1
+AST-5040,Servers,Servers Model A-277,481,3687.9,1773878.42,Mumbai Office,DECOMMISSIONED,2024-04-14,Operations,1
+AST-5041,Security Hardware,Security Hardware Model X-418,41,7680.92,314917.85,SF Office,IN_USE,2024-05-05,IT,1
+AST-5042,Servers,Servers Model C-690,311,4492.72,1397234.43,Singapore DC,IN_USE,2024-05-19,Marketing,1
+AST-5043,Monitors,Monitors Model X-486,487,17506.41,8525619.37,SF Office,MAINTENANCE,2024-08-13,IT,1
+AST-5044,Security Hardware,Security Hardware Model B-939,313,13232.68,4141829.45,Singapore DC,IN_USE,2024-07-14,IT,1
+AST-5045,Monitors,Monitors Model C-709,389,16317.63,6347557.99,Mumbai Office,IN_USE,2024-10-10,HR,1
+AST-5046,Peripherals,Peripherals Model X-390,195,8353.77,1628984.65,Singapore DC,DECOMMISSIONED,2024-11-06,Marketing,1
+AST-5047,Monitors,Monitors Model X-300,171,2472.76,422842.72,SF Office,IN_USE,2024-01-03,Engineering,1
+AST-5048,Security Hardware,Security Hardware Model X-514,374,13060.34,4884565.88,Singapore DC,MAINTENANCE,2024-07-10,IT,1
+AST-5049,Mobile Devices,Mobile Devices Model Pro-172,158,11544.26,1823993.28,Singapore DC,IN_USE,2024-03-04,IT,1
+AST-5050,Data Center Assets,Data Center Assets Model X-361,84,3508.19,294688.31,London Office,DECOMMISSIONED,2024-12-29,Marketing,1
+AST-5051,Software Licenses,Software Licenses Model X-534,357,1052.82,375855.86,SF Office,IN_USE,2024-09-01,Engineering,1
+AST-5052,Software Licenses,Software Licenses Model A-814,324,12722.46,4122077.95,SF Office,AVAILABLE,2024-11-05,Marketing,1
+AST-5053,Servers,Servers Model Pro-778,131,4464.76,584882.93,SF Office,IN_USE,2024-02-29,Finance,1
+AST-5054,Office Supplies,Office Supplies Model A-630,204,12713.66,2593587.63,SF Office,MAINTENANCE,2024-03-25,IT,1
+AST-5055,Peripherals,Peripherals Model Pro-774,355,5450.42,1934898.71,Singapore DC,DECOMMISSIONED,2024-06-06,IT,1
+AST-5056,Monitors,Monitors Model C-933,56,11456.7,641575.3,SF Office,AVAILABLE,2024-04-17,IT,1
+AST-5057,Peripherals,Peripherals Model X-101,4,17766.65,71066.61,NYC HQ,IN_USE,2024-12-22,IT,1
+AST-5058,Security Hardware,Security Hardware Model Lite-541,214,11786.56,2522324.62,SF Office,IN_USE,2024-07-10,HR,1
+AST-5059,Servers,Servers Model Pro-212,102,8764.19,893946.93,Singapore DC,DECOMMISSIONED,2024-04-18,HR,1
+AST-5060,Network Equipment,Network Equipment Model B-365,31,13502.23,418569.27,Singapore DC,MAINTENANCE,2024-11-16,Executive,1
+AST-5061,Monitors,Monitors Model A-400,445,11461.26,5100260.26,NYC HQ,MAINTENANCE,2024-03-04,Sales,1
+AST-5062,Monitors,Monitors Model B-589,176,548.55,96545.63,Singapore DC,IN_USE,2024-01-05,Engineering,1
+AST-5063,Peripherals,Peripherals Model Lite-696,385,17194.52,6619889.81,NYC HQ,IN_USE,2024-04-18,Compliance,1
+AST-5064,Laptops,Laptops Model C-597,193,10859.68,2095918.8,Singapore DC,AVAILABLE,2024-11-05,IT,1
+AST-5065,Software Licenses,Software Licenses Model C-422,190,12278.25,2332867.9,SF Office,AVAILABLE,2024-12-06,IT,1
+AST-5066,Office Supplies,Office Supplies Model C-994,313,1044.49,326925.11,London Office,IN_USE,2024-01-02,Marketing,1
+AST-5067,Office Supplies,Office Supplies Model B-126,372,15040.05,5594898.43,Mumbai Office,IN_USE,2024-09-28,Sales,1
+AST-5068,Network Equipment,Network Equipment Model Lite-774,189,8142.75,1538979.11,Singapore DC,DECOMMISSIONED,2024-07-30,Operations,1
+AST-5069,Laptops,Laptops Model C-117,327,17236.49,5636330.71,London Office,IN_USE,2024-06-15,Marketing,1
+AST-5070,Network Equipment,Network Equipment Model Lite-727,311,8729.38,2714837.97,NYC HQ,AVAILABLE,2024-08-07,Marketing,1
+AST-5071,Monitors,Monitors Model Pro-299,376,6936.68,2608192.02,SF Office,DECOMMISSIONED,2024-10-19,Compliance,1
+AST-5072,Laptops,Laptops Model A-408,66,8970.18,592032.02,Mumbai Office,MAINTENANCE,2024-03-27,Marketing,1
+AST-5073,Monitors,Monitors Model B-349,247,11932.62,2947356.73,SF Office,IN_USE,2024-12-03,Finance,1
+AST-5074,Monitors,Monitors Model A-264,223,17880.61,3987375.15,London Office,MAINTENANCE,2024-05-23,Operations,1
+AST-5075,Peripherals,Peripherals Model Lite-226,341,8581.3,2926222.34,SF Office,DECOMMISSIONED,2024-11-20,Marketing,1
+AST-5076,Monitors,Monitors Model B-689,408,12456.75,5082352.0,Mumbai Office,IN_USE,2024-11-25,Legal,1
+AST-5077,Office Supplies,Office Supplies Model Lite-842,467,12918.21,6032802.94,Singapore DC,DECOMMISSIONED,2024-08-11,Operations,1
+AST-5078,Network Equipment,Network Equipment Model A-214,133,2095.68,278725.98,NYC HQ,AVAILABLE,2024-10-30,Operations,1
+AST-5079,Monitors,Monitors Model C-489,294,6628.75,1948852.62,Mumbai Office,IN_USE,2024-06-08,Engineering,1
+AST-5080,Data Center Assets,Data Center Assets Model X-533,275,3429.59,943137.33,London Office,AVAILABLE,2024-12-13,HR,1
+AST-5081,Security Hardware,Security Hardware Model B-209,340,10835.09,3683931.7,Singapore DC,IN_USE,2024-10-02,Marketing,1
+AST-5082,Software Licenses,Software Licenses Model C-957,75,14693.42,1102006.58,SF Office,MAINTENANCE,2024-12-14,Marketing,1
+AST-5083,Servers,Servers Model Lite-781,308,5111.82,1574440.55,NYC HQ,DECOMMISSIONED,2024-06-12,Sales,1
+AST-5084,Security Hardware,Security Hardware Model Lite-687,353,2235.5,789131.59,Singapore DC,IN_USE,2024-09-10,Sales,1
+AST-5085,Office Supplies,Office Supplies Model C-256,31,17660.85,547486.45,SF Office,IN_USE,2024-12-24,Engineering,1
+AST-5086,Servers,Servers Model X-406,439,8782.77,3855636.54,SF Office,IN_USE,2024-10-07,IT,1
+AST-5087,Software Licenses,Software Licenses Model C-875,217,12207.01,2648920.71,Singapore DC,MAINTENANCE,2024-02-06,Compliance,1
+AST-5088,Peripherals,Peripherals Model B-817,145,12539.33,1818202.57,Mumbai Office,MAINTENANCE,2024-02-19,HR,1
+AST-5089,Software Licenses,Software Licenses Model A-970,386,14246.13,5499004.33,London Office,MAINTENANCE,2024-12-01,HR,1
+AST-5090,Data Center Assets,Data Center Assets Model X-398,71,7962.28,565321.81,SF Office,IN_USE,2024-04-21,Operations,1
+AST-5091,Laptops,Laptops Model Pro-204,186,13071.35,2431270.33,SF Office,MAINTENANCE,2024-08-06,HR,1
+AST-5092,Laptops,Laptops Model X-283,50,6410.18,320508.78,NYC HQ,IN_USE,2024-09-20,Legal,1
+AST-5093,Data Center Assets,Data Center Assets Model Lite-839,223,17455.54,3892585.33,Singapore DC,IN_USE,2024-01-18,Finance,1
+AST-5094,Network Equipment,Network Equipment Model Lite-710,204,8802.94,1795799.09,SF Office,MAINTENANCE,2024-12-20,Finance,1
+AST-5095,Mobile Devices,Mobile Devices Model X-381,443,14730.24,6525496.25,Singapore DC,AVAILABLE,2024-01-06,Finance,1
+AST-5096,Monitors,Monitors Model Lite-784,43,2210.1,95034.19,Mumbai Office,IN_USE,2024-01-12,Executive,1
+AST-5097,Data Center Assets,Data Center Assets Model Lite-863,294,8638.78,2539800.77,NYC HQ,DECOMMISSIONED,2024-04-02,IT,1
+AST-5098,Mobile Devices,Mobile Devices Model C-685,331,12653.72,4188382.86,SF Office,IN_USE,2024-06-15,Finance,1
+AST-5099,Security Hardware,Security Hardware Model Lite-120,95,7304.87,693962.58,Singapore DC,DECOMMISSIONED,2024-10-01,Compliance,1
+AST-5100,Mobile Devices,Mobile Devices Model Pro-651,33,9347.44,308465.41,NYC HQ,IN_USE,2024-12-03,Finance,1
+AST-5101,Servers,Servers Model B-105,442,10789.86,4769118.29,Mumbai Office,MAINTENANCE,2024-06-09,Finance,1
+AST-5102,Laptops,Laptops Model Lite-265,66,10357.83,683616.93,NYC HQ,DECOMMISSIONED,2024-05-11,Engineering,1
+AST-5103,Monitors,Monitors Model C-657,64,9118.08,583556.95,SF Office,MAINTENANCE,2024-12-02,Engineering,1
+AST-5104,Network Equipment,Network Equipment Model Pro-901,154,845.3,130176.24,London Office,DECOMMISSIONED,2024-08-15,HR,1
+AST-5105,Data Center Assets,Data Center Assets Model Pro-460,252,12516.4,3154132.9,Mumbai Office,DECOMMISSIONED,2024-09-18,Operations,1
+AST-5106,Monitors,Monitors Model B-137,340,14758.44,5017870.58,SF Office,IN_USE,2024-06-02,Operations,1
+AST-5107,Servers,Servers Model Pro-467,309,9943.99,3072692.98,London Office,IN_USE,2024-11-14,IT,1
+AST-5108,Monitors,Monitors Model X-765,282,4600.59,1297365.86,SF Office,MAINTENANCE,2024-08-21,Finance,1
+AST-5109,Peripherals,Peripherals Model Lite-246,347,7664.8,2659685.74,Mumbai Office,IN_USE,2024-02-06,Sales,1
+AST-5110,Network Equipment,Network Equipment Model Lite-763,366,6707.98,2455120.14,Mumbai Office,DECOMMISSIONED,2024-03-24,IT,1
+AST-5111,Servers,Servers Model X-488,162,17864.2,2893999.61,NYC HQ,DECOMMISSIONED,2024-05-06,Finance,1
+AST-5112,Peripherals,Peripherals Model Lite-661,64,9573.49,612703.42,Singapore DC,IN_USE,2024-06-17,Finance,1
+AST-5113,Software Licenses,Software Licenses Model C-249,466,6013.31,2802202.23,SF Office,AVAILABLE,2024-01-06,Finance,1
+AST-5114,Office Supplies,Office Supplies Model A-901,497,4011.73,1993828.28,NYC HQ,IN_USE,2024-09-26,Sales,1
+AST-5115,Data Center Assets,Data Center Assets Model A-641,421,14525.26,6115136.55,London Office,DECOMMISSIONED,2024-05-24,Compliance,1
+AST-5116,Peripherals,Peripherals Model A-274,312,1796.7,560571.88,London Office,MAINTENANCE,2024-04-02,Legal,1
+AST-5117,Security Hardware,Security Hardware Model X-588,283,10709.19,3030699.74,Mumbai Office,IN_USE,2024-05-12,Engineering,1
+AST-5118,Security Hardware,Security Hardware Model B-246,366,2811.51,1029012.92,Singapore DC,DECOMMISSIONED,2024-05-16,Engineering,1
+AST-5119,Software Licenses,Software Licenses Model Lite-723,363,13998.84,5081580.36,Singapore DC,MAINTENANCE,2024-04-03,Marketing,1
+AST-5120,Software Licenses,Software Licenses Model C-382,409,8443.95,3453577.5,Singapore DC,DECOMMISSIONED,2024-04-27,Sales,1
+AST-5121,Monitors,Monitors Model C-965,486,5512.32,2678988.55,NYC HQ,IN_USE,2024-02-09,Operations,1
+AST-5122,Monitors,Monitors Model A-861,85,10362.07,880776.02,London Office,DECOMMISSIONED,2024-09-09,Engineering,1
+AST-5123,Office Supplies,Office Supplies Model Lite-239,347,9163.65,3179787.34,Singapore DC,MAINTENANCE,2024-09-20,Compliance,1
+AST-5124,Monitors,Monitors Model B-951,208,265.0,55119.21,NYC HQ,MAINTENANCE,2024-12-25,Compliance,1
+AST-5125,Software Licenses,Software Licenses Model Lite-943,126,17896.08,2254906.29,Mumbai Office,DECOMMISSIONED,2024-01-22,Executive,1
+AST-5126,Mobile Devices,Mobile Devices Model Pro-330,494,3046.05,1504750.74,SF Office,IN_USE,2024-07-06,HR,1
+AST-5127,Security Hardware,Security Hardware Model X-607,181,17145.42,3103320.58,Singapore DC,IN_USE,2024-07-10,Finance,1
+AST-5128,Software Licenses,Software Licenses Model Pro-971,468,12227.95,5722681.15,NYC HQ,AVAILABLE,2024-06-02,Marketing,1
+AST-5129,Peripherals,Peripherals Model Lite-746,136,3846.99,523190.78,Mumbai Office,MAINTENANCE,2024-04-21,Sales,1
+AST-5130,Security Hardware,Security Hardware Model X-732,423,16083.12,6803159.83,Singapore DC,IN_USE,2024-07-01,Engineering,1
+AST-5131,Data Center Assets,Data Center Assets Model C-209,236,5924.0,1398064.98,NYC HQ,AVAILABLE,2024-04-05,IT,1
+AST-5132,Software Licenses,Software Licenses Model X-302,5,1837.56,9187.8,NYC HQ,DECOMMISSIONED,2024-09-20,HR,1
+AST-5133,Office Supplies,Office Supplies Model A-259,64,16437.27,1051985.11,London Office,IN_USE,2024-08-28,IT,1
+AST-5134,Software Licenses,Software Licenses Model B-649,154,6570.46,1011850.09,London Office,IN_USE,2024-08-12,Marketing,1
+AST-5135,Servers,Servers Model X-105,72,6376.97,459142.12,London Office,IN_USE,2024-02-26,Operations,1
+AST-5136,Peripherals,Peripherals Model X-861,21,2419.24,50804.06,London Office,IN_USE,2024-03-23,Operations,1
+AST-5137,Mobile Devices,Mobile Devices Model C-221,492,11979.39,5893861.59,Singapore DC,MAINTENANCE,2024-10-08,Marketing,1
+AST-5138,Servers,Servers Model X-613,167,13523.35,2258399.78,Singapore DC,IN_USE,2024-02-26,Finance,1
+AST-5139,Laptops,Laptops Model Pro-113,65,2812.42,182807.47,SF Office,IN_USE,2024-12-13,Legal,1
+AST-5140,Office Supplies,Office Supplies Model A-544,500,10753.61,5376803.25,Singapore DC,AVAILABLE,2024-05-24,Marketing,1
+AST-5141,Monitors,Monitors Model Pro-256,390,7729.7,3014583.22,Mumbai Office,IN_USE,2024-05-07,Sales,1
+AST-5142,Monitors,Monitors Model Lite-353,443,4754.6,2106287.89,Singapore DC,IN_USE,2024-08-30,Finance,1
+AST-5143,Security Hardware,Security Hardware Model Pro-744,313,3273.67,1024658.92,SF Office,IN_USE,2024-03-02,HR,1
+AST-5144,Office Supplies,Office Supplies Model B-249,20,4940.4,98808.03,Singapore DC,IN_USE,2024-11-11,Operations,1
+AST-5145,Monitors,Monitors Model X-637,443,931.43,412624.49,London Office,IN_USE,2024-04-23,Legal,1
+AST-5146,Office Supplies,Office Supplies Model X-759,246,1118.37,275120.2,NYC HQ,AVAILABLE,2024-02-26,Sales,1
+AST-5147,Software Licenses,Software Licenses Model Lite-528,144,16974.83,2444375.88,SF Office,AVAILABLE,2024-01-25,HR,1
+AST-5148,Laptops,Laptops Model Lite-429,1,952.57,952.57,SF Office,AVAILABLE,2024-08-29,Sales,1
+AST-5149,Data Center Assets,Data Center Assets Model C-603,52,7764.87,403773.34,London Office,AVAILABLE,2024-06-04,Finance,1
+AST-5150,Monitors,Monitors Model Pro-888,343,260.7,89421.33,SF Office,AVAILABLE,2024-07-03,Legal,1
+AST-5151,Data Center Assets,Data Center Assets Model B-765,271,10890.78,2951400.79,London Office,IN_USE,2024-10-26,IT,1
+AST-5152,Monitors,Monitors Model Lite-860,455,1927.98,877232.65,Mumbai Office,IN_USE,2024-01-22,Executive,1
+AST-5153,Network Equipment,Network Equipment Model A-176,99,12688.31,1256142.8,Mumbai Office,DECOMMISSIONED,2024-06-24,Sales,1
+AST-5154,Mobile Devices,Mobile Devices Model Lite-257,390,3647.95,1422702.11,NYC HQ,IN_USE,2024-04-08,IT,1
+AST-5155,Security Hardware,Security Hardware Model Pro-455,365,4556.67,1663185.01,London Office,MAINTENANCE,2024-11-18,Finance,1
+AST-5156,Office Supplies,Office Supplies Model Pro-615,35,8698.53,304448.51,NYC HQ,IN_USE,2024-11-02,Sales,1
+AST-5157,Servers,Servers Model Pro-162,149,832.33,124017.53,SF Office,MAINTENANCE,2024-09-10,Compliance,1
+AST-5158,Security Hardware,Security Hardware Model X-868,498,1363.61,679080.13,Mumbai Office,MAINTENANCE,2024-10-14,IT,1
+AST-5159,Office Supplies,Office Supplies Model B-103,311,4897.82,1523222.95,SF Office,DECOMMISSIONED,2024-04-21,Executive,1
+AST-5160,Laptops,Laptops Model Pro-566,451,16716.36,7539079.28,Mumbai Office,DECOMMISSIONED,2024-05-12,Sales,1
+AST-5161,Network Equipment,Network Equipment Model Pro-221,152,12752.96,1938450.05,SF Office,IN_USE,2024-01-24,Compliance,1
+AST-5162,Network Equipment,Network Equipment Model B-384,150,718.05,107706.87,SF Office,AVAILABLE,2024-01-27,Operations,1
+AST-5163,Network Equipment,Network Equipment Model Lite-455,274,2104.58,576656.1,Mumbai Office,AVAILABLE,2024-06-15,Finance,1
+AST-5164,Security Hardware,Security Hardware Model X-726,136,13001.6,1768217.8,London Office,AVAILABLE,2024-01-30,Engineering,1
+AST-5165,Software Licenses,Software Licenses Model C-280,113,13152.62,1486246.4,London Office,IN_USE,2024-10-02,Executive,1
+AST-5166,Monitors,Monitors Model X-769,370,13427.67,4968237.77,London Office,DECOMMISSIONED,2024-10-09,Operations,1
+AST-5167,Mobile Devices,Mobile Devices Model B-695,113,5846.87,660696.38,Singapore DC,IN_USE,2024-08-16,Operations,1
+AST-5168,Office Supplies,Office Supplies Model X-195,189,2682.79,507047.39,Singapore DC,IN_USE,2024-08-23,HR,1
+AST-5169,Servers,Servers Model Lite-284,97,10260.3,995248.99,London Office,IN_USE,2024-06-07,HR,1
+AST-5170,Servers,Servers Model Pro-292,419,7104.64,2976843.77,NYC HQ,IN_USE,2024-02-06,IT,1
+AST-5171,Network Equipment,Network Equipment Model X-202,233,16365.72,3813213.23,Mumbai Office,IN_USE,2024-01-07,Executive,1
+AST-5172,Monitors,Monitors Model A-946,194,6921.07,1342687.58,NYC HQ,IN_USE,2024-03-08,Operations,1
+AST-5173,Monitors,Monitors Model Lite-714,138,2580.3,356081.59,NYC HQ,IN_USE,2024-02-24,Compliance,1
+AST-5174,Software Licenses,Software Licenses Model B-242,437,12738.59,5566764.6,Singapore DC,DECOMMISSIONED,2024-08-15,HR,1
+AST-5175,Peripherals,Peripherals Model B-157,170,8628.17,1466788.44,Mumbai Office,AVAILABLE,2024-11-17,Compliance,1
+AST-5176,Monitors,Monitors Model A-657,11,14851.27,163364.02,London Office,IN_USE,2024-09-18,IT,1
+AST-5177,Servers,Servers Model A-332,1,16420.32,16420.32,Singapore DC,MAINTENANCE,2024-03-16,Legal,1
+AST-5178,Peripherals,Peripherals Model Lite-493,116,16591.61,1924626.89,NYC HQ,MAINTENANCE,2024-03-27,Finance,1
+AST-5179,Network Equipment,Network Equipment Model C-465,53,17217.05,912503.64,NYC HQ,DECOMMISSIONED,2024-06-19,Finance,1
